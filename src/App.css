@@ -1,0 +1,25 @@
+
+.page-content {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+@keyframes move-across {
+    0% {
+      left: 2%;
+    }
+    100% {
+      left: 94%; 
+    }
+  }
+  
+  @layer utilities {
+    .animate-move {
+      animation: move-across 3s alternate infinite;
+    }
+  }
+
+  
+  
